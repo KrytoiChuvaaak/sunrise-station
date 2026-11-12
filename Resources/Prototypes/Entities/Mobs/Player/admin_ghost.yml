@@ -24,6 +24,7 @@
     context: "aghost"
   - type: Ghost
     canInteract: true
+  - type: AdminGhost # Sunrise-Edit - настройки самозапрета и подписи агоста
   - type: GhostHearing
   - type: Hands
     startingHands:
@@ -130,6 +131,8 @@
   - type: Action
     keywords: [ "AI", "console", "interface" ]
     priority: -10
+    # Интерфейсы консолей должны открываться даже при включённом самозапрете на взаимодействие.
+    checkCanInteract: false # Sunrise-Edit - кнопки агоста не должны блокироваться его самозапретом
   - type: Sprite
     sprite: Structures/Machines/parts.rsi
     layers:
