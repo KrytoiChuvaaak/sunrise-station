@@ -696,6 +696,12 @@
           32:
             sprite: Mobs/Animals/mothroach/displacement.rsi
             state: neck
+  # Sunrise-start - таракамоли получили способность летать
+  - type: WingFlight
+    speedModifier: 1.1
+    autoDisableThreshold: 0.2 # 6 секунд полёта до почти стамина крита
+    sustainStaminaPerSecond: 10 # по дефолту использует 20 стамины и остаётся 60 стамины на полёт
+  # Sunrise-End
 
 
 # Note that the mallard duck is actually a male drake mallard, with the brown duck being the female variant of the same species, however ss14 lacks sex specific textures
