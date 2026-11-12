@@ -16,6 +16,12 @@ public sealed partial class SalvageDifficultyPrototype
     public TimeSpan Delay = TimeSpan.Zero;
 
     /// <summary>
+    /// How long an expedition of this difficulty lasts. Zero falls back to the salvage.expedition_duration CVar.
+    /// </summary>
+    [DataField]
+    public TimeSpan Duration = TimeSpan.Zero;
+
+    /// <summary>
     /// Weighted chance for this difficulty when generating offers.
     /// </summary>
     [DataField]
